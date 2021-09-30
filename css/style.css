@@ -10,18 +10,297 @@ footer {
 }
 
 body {
+    background-attachment: fixed;
     background-color: #55AFBA;
     background-image: url("../images/desert-road_draft.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     color: #5F3914;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.5em;
+}
+h4 {
+    font-size: 1.33em;
+}
+h5 {
+    font-size: 1.17em;
+}
+h6 {
+    font-size: 0.83em;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-inline-start: 0;
+}
+nav ul li {
+    margin: 0 auto;
+    padding: 0;
+    width: 18%;
+}
+nav ul a {
+    background-color: rgba(255,248,239);
+    border: 1px solid rgba(109,95,79);
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.2);
+    display: block;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+nav ul li.dark a {
+    border-color: rgba(255,226,188,1.0);
+    background:rgba(255,226,188,0.33);
+    color: #5F3914;
+}
+nav ul li.dark a:hover {
+    border-color: rgba(255,228,197);
+    background:rgba(255,228,197);
+}
+nav ul li.blue a {
+    border-color: rgba(214,232,255);
+    background:rgba(239,246,255);
+    color: #00397F;
+}
+nav ul li.blue a:hover {
+    border-color: rgba(214,232,255);
+    background:rgba(214,232,255);
+}
+nav ul li.green a {
+    border-color: rgba(214,255,237);
+    background:rgba(239,255,248);
+    color: #007F46;
+}
+nav ul li.green a:hover {
+    border-color: rgba(214,255,237);
+    background:rgba(214,255,237);
+}
+nav ul li.purple a {
+    border-color: rgba(237,214,255);
+    background:rgba(248,239,255);
+    color: #46007F;
+}
+nav ul li.purple a:hover {
+    border-color: rgba(237,214,255);
+    background:rgba(237,214,255);
+}
+nav ul li.yellow a {
+    background:rgba(252,255,214);
+    border-color: rgba(248,255,163);
+    color: #777F00;
+}
+nav ul li.yellow a:hover {
+    background:rgba(250,255,189);
+    border-color: rgba(250,255,189);
+}
+
+footer {
+    font-size: 0.85em;
+    padding: 2em 0;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -2em;
+    margin-left: -2em;
+    padding: 0 2em;
+}
+.row.dark {
+    background:rgba(255,226,188,0.33);
+}
+.row.blue {
+    background:rgba(239,246,255);
+}
+.row.green {
+    background:rgba(239,255,248);
+}
+.row.purple {
+    background:rgba(248,239,255);
+}
+.row.yellow {
+    background:rgba(252,255,214);
+}
+
+.logo {
+    margin: 0.5em auto 0.5em 25%;
+    text-align: center;
+    width: 25%;
+}
+.logo img {
+    width: 250px;
+    height: 150px;
+}
+
+.brand {
+    color: rgba(10,10,10);
+    font-family: 'Merriweather', sans-serif;
+    text-align: center;
+}
+.brand .brand-name {
+    font-size: 2em;
+    font-weight: 800;
+    padding-bottom: 0.5em;
+}
+.brand .slogan {
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.link-title {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.icon {
+    margin-bottom: 1em;
+}
+.icon img {
+    width: 100px;
 }
 
 #wrapper {
     background-color: #FFF8EF;
-    box-shadow: 5px 5px 5px #6D5F4F;
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 700px;
-    max-width: 1024px;
-    width: 80%;
+    border: 1px solid #6D5F4F;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em 1em rgba(109,95,79,0.8);
+    margin: 2em auto;
+    padding: 1em 2em;
+}
+
+
+/* Phones */
+@media (max-width: 767px) {  
+
+    nav ul li {
+        margin: 0 auto 1em;
+        width: 100%;
+    }
+
+    .brand {
+        margin: 0.5em auto;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 0.5em auto;
+        width: 100%;
+    }
+
+    #wrapper {
+        margin: 0.5em auto;
+        padding: 0.5em;
+    }
+
+}
+ 
+/* Tables */
+@media (min-width: 768px) {  
+
+    nav ul li {
+        margin: 0 auto 1em;
+        width: 47.5%;
+    }
+
+    .brand {
+        margin: 1em 10% 0.5em auto;
+        width: 40%;
+    }
+
+    .logo {
+        margin: 0.5em auto 0.5em 10%;
+        width: 40%;
+    }
+
+    #wrapper {
+        width: 720px;
+    }
+
+}
+ 
+/* Desktop monitors */
+@media (min-width: 992px) { 
+
+    nav ul li {
+        margin: 0 auto;
+        width: 18%;
+    }
+
+    .brand {
+        margin: 1em 15% 0.5em auto;
+        width: 35%;
+    }
+
+    .logo {
+        margin: 0.5em auto 0.5em 15%;
+        width: 35%;
+    }
+
+    .link-title {
+        padding: 0 0.5em;
+        min-height: 4em;
+    }
+ 
+    #wrapper {
+        width: 960px;
+    }
+
+}
+ 
+/* Large desktop monitors */
+@media (min-width: 1200px) {  
+
+    nav ul li {
+        margin: 0 auto;
+        width: 18%;
+    }
+
+    .brand {
+        margin: 1em 25% 0.5em auto;
+        width: 25%;
+    }
+
+    .logo {
+        margin: 0.5em auto 0.5em 25%;
+        width: 25%;
+    }
+
+    .link-title {
+        padding: 0 1.33em;
+        min-height: 4em;
+    }
+
+    #wrapper {
+        width: 1080px;
+    }
+
 }
