@@ -76,7 +76,8 @@ nav ul li.dark a {
     background:rgba(255,226,188,0.33);
     color: #5F3914;
 }
-nav ul li.dark a:hover {
+nav ul li.dark a:hover,
+nav ul li.dark.active a {
     border-color: rgba(255,228,197);
     background:rgba(255,228,197);
 }
@@ -150,6 +151,35 @@ footer a {
     background:rgba(252,255,214);
 }
 
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+}
+.panel.panel-full {
+    width: 100%;
+    padding: 0;
+}
+.panel.panel-half {
+    width: 50%;
+}
+.panel.panel-half.panel-left {
+    padding-right: 2em;
+}
+.panel.panel-half.panel-right {
+    padding-left: 2em;
+}
+.panel.panel-third {
+    width: 33.33%;
+}
+.panel.panel-third.panel-center,
+.panel.panel-third.panel-left {
+    padding-right: 2em;
+}
+.panel.panel-third.panel-center,
+.panel.panel-third.panel-right {
+    padding-left: 2em;
+}
+
 .logo {
     margin: 0.5em auto 0.5em 25%;
     text-align: center;
@@ -211,6 +241,26 @@ footer a {
         width: 100%;
     }
 
+    .row {
+        margin-right: -0.5em;
+        margin-left: -0.5em;
+    }
+
+    .panel.panel-half,
+    .panel.panel-third {
+        width: 100%;
+    }
+    .panel.panel-half.panel-left,
+    .panel.panel-third.panel-left,
+    .panel.panel-third.panel-center {
+        padding-right: 0em;
+    }
+    .panel.panel-half.panel-right,
+    .panel.panel-third.panel-right,
+    .panel.panel-third.panel-center {
+        padding-left: 0em;
+    }
+
     .logo {
         margin: 0.5em auto;
         width: 100%;
@@ -234,6 +284,18 @@ footer a {
     .brand {
         margin: 1em 10% 0.5em auto;
         width: 40%;
+    }
+
+    .panel.panel-third {
+        width: 100%;
+    }
+    .panel.panel-third.panel-left,
+    .panel.panel-third.panel-center {
+        padding-right: 0em;
+    }
+    .panel.panel-third.panel-right,
+    .panel.panel-third.panel-center {
+        padding-left: 0em;
     }
 
     .logo {
