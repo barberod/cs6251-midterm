@@ -12,10 +12,10 @@ footer {
 body {
     background-attachment: fixed;
     background-color: #55AFBA;
-    background-image: url("../images/desert-road_draft.png");
+    background-image: url("../images/desert-road.svg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 110% auto;
     color: #5F3914;
     font-family: 'Mulish', sans-serif;
     font-size: 18px;
@@ -156,7 +156,7 @@ footer a {
     width: 25%;
 }
 .logo img {
-    width: 250px;
+    width: 150px;
     height: 150px;
 }
 
