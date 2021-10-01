@@ -348,6 +348,17 @@ footer a {
     table tr:nth-last-of-type(odd) {
         background-color: rgba(0,0,0,0.05);
     }
+    table a {
+        color: #007BFF;
+        text-decoration: none;
+    }
+    table a:hover {
+        color: #0056B2;
+        text-decoration: underline;
+    }
+    table a:visited {
+        color: #6f42c1;
+    }
     .table-full {
         width: 100%;
     }
