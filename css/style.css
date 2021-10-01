@@ -81,42 +81,6 @@ nav ul li.dark.active a {
     border-color: rgba(255,228,197);
     background:rgba(255,228,197);
 }
-nav ul li.blue a {
-    border-color: rgba(214,232,255);
-    background:rgba(239,246,255);
-    color: #00397F;
-}
-nav ul li.blue a:hover {
-    border-color: rgba(214,232,255);
-    background:rgba(214,232,255);
-}
-nav ul li.green a {
-    border-color: rgba(214,255,237);
-    background:rgba(239,255,248);
-    color: #007F46;
-}
-nav ul li.green a:hover {
-    border-color: rgba(214,255,237);
-    background:rgba(214,255,237);
-}
-nav ul li.purple a {
-    border-color: rgba(237,214,255);
-    background:rgba(248,239,255);
-    color: #46007F;
-}
-nav ul li.purple a:hover {
-    border-color: rgba(237,214,255);
-    background:rgba(237,214,255);
-}
-nav ul li.yellow a {
-    background:rgba(252,255,214);
-    border-color: rgba(248,255,163);
-    color: #777F00;
-}
-nav ul li.yellow a:hover {
-    background:rgba(250,255,189);
-    border-color: rgba(250,255,189);
-}
 
 footer {
     font-size: 0.85em;
@@ -175,6 +139,9 @@ footer a {
     font-family: 'Merriweather', sans-serif;
     text-align: center;
 }
+.brand .brand-desc {
+    padding-bottom: 0.5em;
+}
 .brand .brand-name {
     font-size: 2em;
     font-weight: 800;
@@ -205,6 +172,63 @@ footer a {
     background-color: #FFFFFF;
     box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.4);
     padding: 0.5em;
+}
+
+.button a {
+    background-color: rgba(255,248,239);
+    border: 1px solid rgba(109,95,79);
+    border-radius: 0.5em;
+    box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.2);
+    display: block;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    text-align: center;
+}
+.button.dark a {
+    border-color: rgba(255,226,188,1.0);
+    background:rgba(255,226,188,0.33);
+    color: #5F3914;
+}
+.button.dark a:hover,
+.button.dark.active a {
+    border-color: rgba(255,228,197);
+    background:rgba(255,228,197);
+}
+.button.blue a {
+    border-color: rgba(214,232,255);
+    background:rgba(239,246,255);
+    color: #00397F;
+}
+.button.blue a:hover {
+    border-color: rgba(214,232,255);
+    background:rgba(214,232,255);
+}
+.button.green a {
+    border-color: rgba(214,255,237);
+    background:rgba(239,255,248);
+    color: #007F46;
+}
+.button.green a:hover {
+    border-color: rgba(214,255,237);
+    background:rgba(214,255,237);
+}
+.button.purple a {
+    border-color: rgba(237,214,255);
+    background:rgba(248,239,255);
+    color: #46007F;
+}
+.button.purple a:hover {
+    border-color: rgba(237,214,255);
+    background:rgba(237,214,255);
+}
+.button.yellow a {
+    background:rgba(252,255,214);
+    border-color: rgba(248,255,163);
+    color: #777F00;
+}
+.button.yellow a:hover {
+    background:rgba(250,255,189);
+    border-color: rgba(250,255,189);
 }
 
 #wrapper {
