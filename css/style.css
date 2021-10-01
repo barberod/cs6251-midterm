@@ -159,26 +159,6 @@ footer a {
     width: 100%;
     padding: 0;
 }
-.panel.panel-half {
-    width: 50%;
-}
-.panel.panel-half.panel-left {
-    padding-right: 2em;
-}
-.panel.panel-half.panel-right {
-    padding-left: 2em;
-}
-.panel.panel-third {
-    width: 33.33%;
-}
-.panel.panel-third.panel-center,
-.panel.panel-third.panel-left {
-    padding-right: 2em;
-}
-.panel.panel-third.panel-center,
-.panel.panel-third.panel-right {
-    padding-left: 2em;
-}
 
 .logo {
     margin: 0.5em auto 0.5em 25%;
@@ -216,6 +196,15 @@ footer a {
 }
 .icon img {
     width: 100px;
+}
+
+.photo {
+    margin: 1em auto 2em;
+}
+.photo.photo-bordered img {
+    background-color: #FFFFFF;
+    box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.4);
+    padding: 0.5em;
 }
 
 #wrapper {
@@ -266,6 +255,11 @@ footer a {
         width: 100%;
     }
 
+    .photo img {
+        max-height: 12em;
+        max-width: 12em;
+    }
+
     #wrapper {
         margin: 0.5em auto;
         padding: 0.5em;
@@ -303,6 +297,11 @@ footer a {
         width: 40%;
     }
 
+    .photo img {
+        max-height: 18em;
+        max-width: 18em;
+    }
+
     #wrapper {
         width: 720px;
     }
@@ -322,6 +321,27 @@ footer a {
         width: 35%;
     }
 
+    .panel.panel-half {
+        width: 50%;
+    }
+    .panel.panel-half.panel-left {
+        padding-right: 2em;
+    }
+    .panel.panel-half.panel-right {
+        padding-left: 2em;
+    }
+    .panel.panel-third {
+        width: 33.33%;
+    }
+    .panel.panel-third.panel-center,
+    .panel.panel-third.panel-left {
+        padding-right: 2em;
+    }
+    .panel.panel-third.panel-center,
+    .panel.panel-third.panel-right {
+        padding-left: 2em;
+    }
+
     .logo {
         margin: 0.5em auto 0.5em 15%;
         width: 35%;
@@ -330,6 +350,11 @@ footer a {
     .link-title {
         padding: 0 0.5em;
         min-height: 4em;
+    }
+
+    .photo img {
+        max-height: 15em;
+        max-width: 15em;
     }
  
     #wrapper {
@@ -359,6 +384,11 @@ footer a {
     .link-title {
         padding: 0 1.33em;
         min-height: 4em;
+    }
+
+    .photo img {
+        max-height: 20em;
+        max-width: 20em;
     }
 
     #wrapper {
