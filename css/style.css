@@ -186,6 +186,10 @@ footer a {
     box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.4);
     padding: 0.5em;
 }
+.photo.photo-outlined img {
+    border: 1px solid rgba(109,95,79,0.85);
+    box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.4);
+}
 .photo figcaption {
     font-size: 0.85em;
     font-style: italic;
