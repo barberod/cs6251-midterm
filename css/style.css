@@ -97,6 +97,7 @@ footer a {
     flex-wrap: wrap;
     margin-right: -2em;
     margin-left: -2em;
+    overflow-x: hidden;
     padding: 0 2em;
 }
 .row.dark {
@@ -231,6 +232,49 @@ footer a {
     border-color: rgba(250,255,189);
 }
 
+caption {
+    color: rgba(0,0,0,0.4);
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+table {
+    color: rgba(0,0,0,0.8);
+    border-collapse: collapse;
+}
+table a {
+    color: #007BFF;
+    text-decoration: none;
+}
+table a:hover {
+    color: #0056B2;
+    text-decoration: underline;
+}
+table a:visited {
+    color: #6f42c1;
+}
+.table-bordered,
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid rgba(0,0,0,0.2);
+}
+.table-bordered th,
+.table-bordered td {
+    padding: 0.75em;
+}
+.table-bordered th {
+    font-family:'Merriweather', sans-serif;
+    font-weight: 800;
+}
+.table-bordered td {
+    text-align: center;
+}
+.table-bordered td.align-left {
+    text-align: left;
+}
+.table-striped tr:nth-last-of-type(odd) {
+    background-color: rgba(0,0,0,0.05);
+}
+
 #wrapper {
     background-color: #FFF8EF;
     border: 1px solid #6D5F4F;
@@ -238,6 +282,9 @@ footer a {
     box-shadow: 0 0.2em 1em rgba(109,95,79,0.5);
     margin: 2em auto;
     padding: 1em 2em;
+}
+#table-wrapper {
+    margin: 1em auto 2em;
 }
 
 
@@ -288,10 +335,13 @@ footer a {
         margin: 0.5em auto;
         padding: 0.5em;
     }
+    #table-wrapper {
+        overflow-x: scroll;
+    }
 
 }
  
-/* Tables */
+/* Tablets */
 @media (min-width: 768px) {  
 
     nav ul li {
@@ -333,53 +383,6 @@ footer a {
     .photo img {
         max-height: 18em;
         max-width: 18em;
-    }
-
-    caption {
-        color: rgba(0,0,0,0.4);
-        font-style: italic;
-        margin-bottom: 0.5em;
-    }
-    table {
-        color: rgba(0,0,0,0.8);
-        margin: 1em auto 2em;
-        border-collapse: collapse;
-    }
-    table tr:nth-last-of-type(odd) {
-        background-color: rgba(0,0,0,0.05);
-    }
-    table a {
-        color: #007BFF;
-        text-decoration: none;
-    }
-    table a:hover {
-        color: #0056B2;
-        text-decoration: underline;
-    }
-    table a:visited {
-        color: #6f42c1;
-    }
-    .table-full {
-        width: 100%;
-    }
-    .table-bordered,
-    .table-bordered th,
-    .table-bordered td {
-        border: 1px solid rgba(0,0,0,0.2);
-    }
-    .table-bordered th,
-    .table-bordered td {
-        padding: 0.75em;
-    }
-    .table-bordered th {
-        font-family:'Merriweather', sans-serif;
-        font-weight: 800;
-    }
-    .table-bordered td {
-        text-align: center;
-    }
-    .table-bordered td.align-left {
-        text-align: left;
     }
 
     #wrapper {
