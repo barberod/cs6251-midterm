@@ -222,7 +222,7 @@ footer a {
     background-color: #FFF8EF;
     border: 1px solid #6D5F4F;
     border-radius: 0.5em;
-    box-shadow: 0 0.2em 1em rgba(109,95,79,0.8);
+    box-shadow: 0 0.2em 1em rgba(109,95,79,0.5);
     margin: 2em auto;
     padding: 1em 2em;
 }
