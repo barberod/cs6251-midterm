@@ -186,6 +186,11 @@ footer a {
     box-shadow: 0 0.1em 0.2em rgba(109,95,79,0.4);
     padding: 0.5em;
 }
+.photo figcaption {
+    font-size: 0.85em;
+    font-style: italic;
+    margin: 0.25em 0;
+}
 
 .button a {
     background-color: rgba(255,248,239);
