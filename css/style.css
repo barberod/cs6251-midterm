@@ -9,6 +9,10 @@ footer {
     display: block;
 }
 
+header {
+    margin-bottom: 2em;
+}
+
 body {
     background-attachment: fixed;
     background-color: #55AFBA;
@@ -71,15 +75,23 @@ nav ul a {
     text-decoration: none;
     text-align: center;
 }
-nav ul li.dark a {
+nav ul li.nav-link a {
     border-color: rgba(255,226,188,1.0);
     background:rgba(255,226,188,0.33);
     color: #5F3914;
 }
-nav ul li.dark a:hover,
-nav ul li.dark.active a {
+nav ul li.nav-link a:hover {
     border-color: rgba(255,228,197);
     background:rgba(255,228,197);
+}
+nav ul li.nav-link.active a {
+    border-color: rgba(214,232,255);
+    background:rgba(239,246,255);
+    color: #00397F;
+}
+nav ul li.nav-link.active a:hover {
+    border-color: rgba(214,232,255);
+    background:rgba(214,232,255);
 }
 
 footer {
