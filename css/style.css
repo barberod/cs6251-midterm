@@ -54,6 +54,9 @@ h6 {
     font-size: 0.83em;
 }
 
+nav {
+    margin-bottom: 3em;
+}
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -178,6 +181,9 @@ footer a {
     width: 100px;
 }
 
+figure {
+    text-align: center;
+}
 .photo {
     margin: 1em auto 2em;
 }
@@ -193,7 +199,7 @@ footer a {
 .photo figcaption {
     font-size: 0.85em;
     font-style: italic;
-    margin: 0.25em 0;
+    margin: 0.25em 3em;
     text-align: center;
 }
 
@@ -403,8 +409,8 @@ table a:visited {
     }
 
     .photo img {
-        max-height: 18em;
-        max-width: 18em;
+        max-height: 15em;
+        max-width: 15em;
     }
 
     #wrapper {
@@ -449,8 +455,8 @@ table a:visited {
     }
 
     .photo img {
-        max-height: 15em;
-        max-width: 15em;
+        max-height: 16em;
+        max-width: 16em;
     }
  
     #wrapper {
