@@ -79,22 +79,22 @@ nav ul a {
     text-align: center;
 }
 nav ul li.nav-link a {
-    border-color: rgba(255,226,188,1.0);
-    background:rgba(255,226,188,0.33);
-    color: #5F3914;
-}
-nav ul li.nav-link a:hover {
-    border-color: rgba(255,228,197);
-    background:rgba(255,228,197);
-}
-nav ul li.nav-link.active a {
     border-color: rgba(214,232,255);
     background:rgba(239,246,255);
     color: #00397F;
 }
-nav ul li.nav-link.active a:hover {
+nav ul li.nav-link a:hover {
     border-color: rgba(214,232,255);
     background:rgba(214,232,255);
+}
+nav ul li.nav-link.active a {
+    border-color: rgba(214,255,237);
+    background:rgba(239,255,248);
+    color: #007F46;
+}
+nav ul li.nav-link.active a:hover {
+    border-color: rgba(214,255,237);
+    background:rgba(214,255,237);
 }
 
 footer {
